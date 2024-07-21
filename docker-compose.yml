@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: gloomhaven-helper-c
+    image: gloomhaven-helper-i
+    build:
+      context: .
+    ports:
+      - 8080:80
