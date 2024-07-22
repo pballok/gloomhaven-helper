@@ -1,6 +1,9 @@
+import ShowAbilityCard from "./components/ShowAbilityCard";
+import {AllAbilityCards} from "./data/AbilityCards";
+
 function App() {
     return (
-        <div>Gloomhaven</div>
+        <ShowAbilityCard card={AllAbilityCards[0]}/>
     );
 }
 
