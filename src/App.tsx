@@ -1,9 +1,15 @@
-import ShowAbilityCard from "./components/ShowAbilityCard";
+import AbilityCardList from "./components/AbilityCardList";
+
 import {AllAbilityCards} from "./data/AbilityCards";
+
+import { CssBaseline } from "@mui/material";
 
 function App() {
     return (
-        <ShowAbilityCard card={AllAbilityCards[0]}/>
+        <>
+            <CssBaseline />
+            <AbilityCardList name="Hand" cards={AllAbilityCards} />
+        </>
     );
 }
 

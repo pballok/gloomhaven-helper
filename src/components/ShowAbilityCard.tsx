@@ -1,11 +1,17 @@
 import AbilityCard from "../types/AbilityCard";
 
-interface Props {
+interface IProps {
     card: AbilityCard,
 }
 
-function ShowAbilityCard({ card }: Props) {
-    return <div>{card.name}</div>
+function ShowAbilityCard({ card }: IProps) {
+    return (
+        <img
+            src={card.imageSource}
+            alt={card.name}
+            loading="lazy"
+        />
+    );
 }
 
 export default ShowAbilityCard;
