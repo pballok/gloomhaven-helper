@@ -2,13 +2,17 @@ import AbilityCardList from "./components/AbilityCardList";
 
 import {AllAbilityCards} from "./data/AbilityCards";
 
-import { CssBaseline } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
     return (
         <>
             <CssBaseline />
-            <AbilityCardList name="Hand" cards={AllAbilityCards} />
+            <AbilityCardList
+                id="player-hand"
+                name="Player Hand"
+                cards={AllAbilityCards}
+            />
         </>
     );
 }

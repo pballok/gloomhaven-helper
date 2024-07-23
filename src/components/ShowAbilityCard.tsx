@@ -10,6 +10,8 @@ function ShowAbilityCard({ card }: IProps) {
             src={card.imageSource}
             alt={card.name}
             loading="lazy"
+            width="100%"
+            height="100%"
         />
     );
 }
